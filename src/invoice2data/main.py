@@ -4,6 +4,7 @@
 import argparse
 import shutil
 import os
+import sys
 from os.path import join
 import logging
 
@@ -93,6 +94,7 @@ def extract_data(invoicefile, templates=None, input_module=pdftotext):
             return t.extract(optimized_str)
 
     logger.error("No template for %s", invoicefile)
+    sys.exit(1)
     return False
 
 
