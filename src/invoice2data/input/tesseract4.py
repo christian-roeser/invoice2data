@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-def to_text(path, language="fra"):
+def to_text(path, language="deu"):
     """Wraps Tesseract 4 OCR with custom language model.
 
     Parameters
