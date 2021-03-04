@@ -5,6 +5,7 @@ Templates are initially read from .yml files and then kept as class.
 """
 
 import re
+import sys
 import dateparser
 from unidecode import unidecode
 import logging
@@ -222,4 +223,5 @@ class InvoiceTemplate(OrderedDict):
                     required_fields, fields
                 )
             )
+            sys.exit(1)
             return None
