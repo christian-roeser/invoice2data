@@ -223,5 +223,5 @@ class InvoiceTemplate(OrderedDict):
                     required_fields, fields
                 )
             )
-            sys.exit(1)
+            sys.exit(3)
             return None
